@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			* {
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+			}
+
+			body {
+				width: 100%;
+				margin: 0;
+			}
+
+			header {
+				width: 100%;
+				padding: 20px;
+				background-color: #C4C4C4;
+				text-align: center;
+			}
+
+			.header-title {
+				font-size: 20pt;
+				font-weight: bold;
+			}
+
+			article {
+				display: flex;
+				flex-direction: row;
+			}
+
+			.column {
+				float: left;
+				padding: 10px;
+				color: #373737;
+				flex-grow: 1;
+				flex-basis: 0;
+			}
+
+			.column-title {
+				padding: 10px;
+				font-weight: bold;
+				font-size: 17pt;
+			}
+
+			#column1 {
+				background-color: #ACDBC9;
+			}
+
+			#column2 {
+				background-color: #FDD2B5;
+			}
+
+			#column3 {
+				background-color: #F48B94;
+			}
+
+			@media screen and (max-width: 600px) {
+				.container {
+					flex-direction: column;
+				}
+
+				.column {
+					text-align: center;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="header-title"> Header </div>
+		</header>
+
+		<article>
+			<div class="column" id="column1">
+				<div class="column-title"> Title </div>
+				<div> I hate Lorem Ipsum </div>
+			</div>
+			<div class="column" id="column2">
+				<div class="column-title"> Title </div>
+				<div> (Always) I hate Lorem Ipsum </div>
+				<div> (Always) I hate Lorem Ipsum </div>
+				<div> (Always) I hate Lorem Ipsum </div>
+				<div> (Always) I hate Lorem Ipsum </div>
+				<div> (Always) I hate Lorem Ipsum </div>
+			</div>
+			<div class="column" id="column3">
+				<div class="column-title"> Title </div>
+				<div> I despise Lorem Ipsum. </div>
+			</div>
+		</article>
+	</body>
+</html>
